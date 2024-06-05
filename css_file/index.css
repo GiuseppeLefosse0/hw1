@@ -1,0 +1,266 @@
+.hidden {
+    display: none;
+}
+
+html {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0%;
+}
+
+
+nav {
+    background-color: whitesmoke;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    z-index: 2;
+  }
+
+.logo{
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+}
+.nav-logo{
+    margin-left: 50px;
+}
+#links {
+    color: white;
+    z-index: 1;
+}
+
+a {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    font-size: 70%;
+    padding: 10px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightgrey;
+}
+
+/* MENU' */
+
+#menu {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+}
+
+#menu div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 719px) {
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+/* HEADER */
+
+header {
+    height: 550px;
+    width: 100%;
+    background-image: url(immagini/header-img.png);
+    background-size:cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    font-size: 270%;
+    z-index: 1;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+/* ARTICLE */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 550px;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 6px solid black;
+    border-radius: 20px;
+}
+
+article section div .piani{
+    margin-top: 40px;
+    height: 550px;
+    width: 400px;
+}
+
+article section .piani span {
+    color: grey;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* PIANI */
+
+div.month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.month img {
+    width: 300px;
+    height: 300px;
+}
+
+div.month span{
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+div.month span:hover {
+    color: black;
+    cursor: pointer;
+}
+
+article span {
+    text-align: center;
+}
+
+#piano_sel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 90%;
+    margin-top: 50px;
+    color: black;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: lightgrey;
+    font-size: 75%;
+    margin: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media (max-width: 792px) {
+
+    header{
+        height: 40%;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    nav div a{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    article{
+        width: 80%;
+        height: auto;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    div.abbonamenti em{
+        text-align: center;
+    }
+
+    div.month img{
+        width: 250px;
+        height: 250px;
+    }
+
+    div.month span {
+        font-size: 25px;
+    }
+
+    #abb_sel{
+        font-size: 20px;
+    }
+
+    footer{
+        height: 15%;
+    }
+
+    footer p{
+        font-size: 50%;
+    }
+
+}
